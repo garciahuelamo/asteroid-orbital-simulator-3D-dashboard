@@ -13,7 +13,8 @@ st.title('Asteroid Exploration Hub')
 
 hpage= st.Page('./streamlit/homepage.py', title='Homepage')
 dashboard = st.Page('./streamlit/data_dashboard.py', title='Dashboard')
+simulator = st.Page('./streamlit/simulator.py', title='Orbital Simulator 3D')
 
-pg = st.navigation([hpage, dashboard])
+pg = st.navigation([hpage, dashboard, simulator])
 
 pg.run()
